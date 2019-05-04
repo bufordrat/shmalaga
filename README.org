@@ -1,0 +1,50 @@
+#+TITLE: shamalaga
+#+AUTHOR: Matt Teichman
+#+DESCRIPTION: Galaga clone
+#+OPTIONS: toc:nil, num:nil
+
+* Description
+  =shmalaga= is a Galaga clone that I wrote for a class project.  It is no
+  longer being maintained, but I think it's interesting to consult for reference
+  purposes because it demonstrates how to use Haskell's [[https://hackage.haskell.org/package/gloss][=gloss=]] library to create
+  an action game in a pure functional style.  The methods =gloss= uses for
+  e.g. redrawing sprites and event handling are somewhat reminiscent of
+  functional reactive programming.
+* Requirements
+  This software was originally built for Arch Linux and Mac OS X, but recently
+  the Gloss library seems to have stopped working on Linux.  See [[https://stackoverflow.com/questions/42072958/haskell-with-opengl-unknown-glut-entry-glutinit][this discussion]]
+  for details.  However, the project still compiles and runs on OS X Mojave.
+  The following are required to compile it:
+  + Glasgow Haskell compiler (8.6.4)
+  + Cabal build system
+* Installation
+  This project only requires =cabal= and =ghc= to be installed.  Cabal will
+  automatically pull the latest version of the =Gloss= library from Hackage and
+  compile it as part of the build process, so no need to install it separately.
+  To compile =shmalaga=, run the following command in the root directory of the
+  project:
+  #+BEGIN_EXAMPLE
+  $ cabal new-build
+  #+END_EXAMPLE
+  To play the game, run it using cabal: 
+  #+BEGIN_EXAMPLE
+  $ cabal new-exec shmalaga
+  #+END_EXAMPLE
+  The game will begin running in a separate window.
+* Source Files
+
+  The source files are located in the root directory of the project:
+  + Choreography.hs
+  + EnemyMoves.hs
+  + EventHandler.hs
+  + GameConstants.hs
+  + GameOver.hs
+  + GameState.hs
+  + HighScores.hs
+  + Main.hs
+  + MainMenu.hs
+  + PlayerDead.hs
+  + PlayerMoves.hs
+  + Setup.hs
+  + Shuffle.hs
+  + Sprite.hs

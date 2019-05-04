@@ -1,2 +1,0 @@
-# shmalaga
-Galaga clone
