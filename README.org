@@ -6,7 +6,7 @@
 * Description
   =shmalaga= is a Galaga clone that I wrote for a class project.  It is no
   longer being maintained, but I think it's interesting to consult for reference
-  purposes because it demonstrates how to use Haskell's [[https://hackage.haskell.org/package/gloss][=gloss=]] library to create
+  purposes because it demonstrates how to use Haskell's [[https://hackage.haskell.org/package/gloss][gloss]] library to create
   an action game in a pure functional style.  The methods =gloss= uses for
   e.g. redrawing sprites and event handling are somewhat reminiscent of
   functional reactive programming.
